@@ -324,6 +324,93 @@ form {
   margin: 1rem;
 }
 
+/* analys */
+
+.analys {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.analys-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.analys-content {
+  flex: 1;
+}
+
+.analys-img {
+  flex: 1;
+}
+
+.analys-img img {
+  max-width: 100%;
+}
+
+.analys-wrapper h3 {
+  margin-bottom: 2rem;
+}
+
+.analys-wrapper p {
+  margin-bottom: 2rem;
+}
+
+.analys-content-bars > div {
+  margin: 3rem;
+}
+
+.bars-red-one {
+  width: 60%;
+  border: 0.4rem solid red;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.bars-red-two {
+  width: 80%;
+  border: 0.4rem solid red;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.bars-red-three {
+  width: 90%;
+  border: 0.4rem solid red;
+  border-radius: 1rem;
+  z-index: 2;
+}
+.analys-content-bars-div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bars-span-one {
+  position: absolute;
+  left: 55%;
+  color: #03a4ed;
+}
+
+.bars-span-two {
+  position: absolute;
+  left: 75%;
+  color: #03a4ed;
+}
+
+.bars-span-three {
+  position: absolute;
+  left: 85%;
+  color: #03a4ed;
+}
+
+.bars-full {
+  width: 40%;
+  border: 0.4rem solid #f7eff1;
+  border-radius: 1rem;
+  position: absolute;
+  z-index: -1;
+}
 /* media query */
 
 @media (max-width: 1399.98px) {
@@ -336,7 +423,7 @@ form {
 @media (max-width: 1199.98px) {
   .container {
     margin-left: 5rem;
-    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
 
@@ -400,6 +487,10 @@ form {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
+  }
+
+  .analys-wrapper {
+    flex-direction: column;
   }
 }
 
