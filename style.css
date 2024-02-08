@@ -242,7 +242,7 @@ header {
   max-width: 60rem;
 }
 
-form {
+.hero-content form {
   position: relative;
 }
 .hero-inp {
@@ -471,6 +471,191 @@ form {
 .provide div p {
   margin: 1rem;
 }
+
+/* trend */
+
+.trend {
+  margin-top: 20rem;
+  margin-bottom: 5rem;
+}
+
+.trend h4 {
+  margin-left: 7rem;
+  max-width: 30%;
+  margin-bottom: 10rem;
+}
+
+.trend-wrapper {
+  display: flex;
+}
+
+.trend-content {
+  flex: 1;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.trend-content img {
+  max-width: 100%;
+}
+.trend-sidebar {
+  flex: 1;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.marketing {
+  border: 0px solid gray;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 30%;
+  background-color: white;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 20px 5px;
+}
+.marketing h5 {
+  margin: 2rem;
+}
+.marketing p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.marketing-top {
+  display: flex;
+  margin: 2rem;
+}
+.marketing-top div {
+  display: flex;
+}
+
+.trend-content button {
+  background-color: #03a4ed;
+  border: 0px solid;
+  border-radius: 2rem;
+  padding: 1rem;
+  color: white;
+  margin-top: 0rem;
+}
+
+.trend-side {
+  display: flex;
+}
+
+.trend-side-content div {
+  margin-bottom: 2rem;
+}
+
+.trend-side-content h5 {
+  margin-bottom: 2rem;
+}
+
+.trend-side-content i {
+  color: #fe3f40;
+}
+
+.trend-side {
+  margin-bottom: 3rem;
+}
+.trend-side img {
+  border: 0px solid red;
+  border-radius: 2rem;
+}
+
+.trend-top-img {
+  width: 40%;
+  position: absolute;
+  left: 60%;
+  bottom: 100%;
+}
+
+/* footer */
+footer {
+  margin-top: 5rem;
+}
+.footer-wrapper {
+  background: linear-gradient(to right, #ff3e27, #ff305c);
+  color: white;
+  display: flex;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.footer-wrapper h4 {
+  margin-bottom: 4rem;
+}
+
+.footer-wrapper p {
+  margin-bottom: 4rem;
+}
+
+.footer-wrapper i {
+  border: 1rem solid white;
+  border-radius: 50%;
+  background-color: white;
+  color: red;
+  font-size: 1.6rem;
+}
+
+.footer-form {
+  flex: 1;
+}
+.footer-content {
+  flex: 1;
+}
+.form-wrapper {
+  background-color: white;
+  padding: 3rem;
+  border: 0px;
+  border-radius: 2rem;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+textarea {
+  background-color: #d1f3ff;
+  width: 100%;
+  border: 0px solid;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.footer-form input {
+  color: black;
+  background-color: #d1f3ff;
+  border: 0rem solid;
+  border-radius: 2rem;
+  width: 100%;
+  padding: 1.6rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.input-wrapper-first {
+  margin-right: 2rem;
+}
+::placeholder {
+  color: black;
+}
+
+.submit {
+  background-color: #03a4ed !important;
+  color: white !important;
+  width: unset !important;
+  margin-top: 1rem !important;
+}
+
+.footer-div {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer-div p {
+  margin-top: 1rem;
+}
 /* media query */
 
 @media (max-width: 1399.98px) {
@@ -557,6 +742,48 @@ form {
     flex: 1 0 calc(50% - 2rem);
     flex-wrap: wrap;
   }
+
+  .trend h4 {
+    text-align: center;
+    max-width: unset;
+    margin-left: unset;
+  }
+
+  .trend-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .marketing {
+    position: unset;
+    width: unset;
+  }
+  .trend-top-img {
+    display: none;
+  }
+  .trend-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trend-sidebar {
+    margin-top: 5rem;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .footer-content {
+    margin-bottom: 5rem;
+  }
+
+  .input-wrapper {
+    display: unset;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -584,6 +811,16 @@ form {
   .provide {
     flex: 1 0 calc(50% - 2rem);
     flex-wrap: wrap;
+  }
+
+  .trend-side {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .footer-wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 @media (max-width: 575.98px) {
