@@ -226,6 +226,10 @@ header {
   align-items: center;
 }
 
+.hero-content {
+  animation: soldangel 1s forwards;
+}
+
 .hero-content h5 {
   color: #fe3f40;
   margin-top: 3rem;
@@ -280,6 +284,10 @@ header {
 
 .span-red {
   color: #fe3f40;
+}
+
+.hero-img {
+  animation: sagdangel 1s forwards;
 }
 
 .hero-img img {
@@ -338,10 +346,12 @@ header {
 }
 .analys-content {
   flex: 1;
+  animation: sagdangel 1s forwards;
 }
 
 .analys-img {
   flex: 1;
+  animation: soldangel 1s forwards;
 }
 
 .analys-img img {
@@ -487,12 +497,14 @@ header {
 
 .trend-wrapper {
   display: flex;
+  animation: alttangel 1s forwards;
 }
 
 .trend-content {
   flex: 1;
   position: relative;
   margin-right: 1rem;
+  animation: usttengel 1s forwards;
 }
 
 .trend-content img {
@@ -656,6 +668,53 @@ textarea {
 .footer-div p {
   margin-top: 1rem;
 }
+
+/* keyframes */
+
+@keyframes soldangel {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sagdangel {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes usttengel {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes alttangel {
+  from {
+    transform: translateY(100%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* media query */
 
 @media (max-width: 1399.98px) {
@@ -716,6 +775,7 @@ textarea {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    animation: usttengel 1s forwards;
   }
   .data-content p {
     max-width: 100%;
@@ -732,6 +792,7 @@ textarea {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5rem;
+    animation: alttangel 1s forwards;
   }
 
   .analys-wrapper {
@@ -741,6 +802,11 @@ textarea {
   .provide {
     flex: 1 0 calc(50% - 2rem);
     flex-wrap: wrap;
+    margin-bottom: 7rem;
+  }
+
+  .provide:hover div {
+    left: 20%;
   }
 
   .trend h4 {
