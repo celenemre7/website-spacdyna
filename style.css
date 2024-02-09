@@ -214,6 +214,10 @@ header {
   display: none;
 }
 
+.fa-bars {
+  cursor: pointer;
+}
+
 /* hero */
 .hero {
   margin-top: 10rem;
@@ -667,6 +671,7 @@ textarea {
 
 .footer-div p {
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* keyframes */
@@ -767,6 +772,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    clip-path: circle(10px 10px 10px 10px);
   }
 
   .datas-content {

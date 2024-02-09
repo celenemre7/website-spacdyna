@@ -15,6 +15,14 @@
   <link rel="stylesheet" href="style.css" />
 
   <body>
+    <script>
+      // JavaScript Kodları
+      document.querySelector(".fa-bars").addEventListener("click", function () {
+        var ul = document.querySelector("ul");
+        ul.style.display = ul.style.display === "flex" ? "none" : "flex"; // Önceki kod "none" olarak ayarlıyordu, burada "flex" olarak değiştirildi.
+      });
+    </script>
+
     <header>
       <nav>
         <div class="nav-wrapper container">
