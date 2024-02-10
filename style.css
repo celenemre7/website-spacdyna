@@ -189,6 +189,10 @@ header {
   align-items: center;
   width: 70%;
 }
+
+.nav-wrapper div {
+  display: none;
+}
 .nav-wrapper a {
   font-size: 1.8rem;
 }
@@ -869,6 +873,30 @@ textarea {
   .nav-wrapper ul {
     display: none;
   }
+
+  .nav-wrapper ul.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 8%;
+    left: 22%;
+    background-color: #f7f7f7;
+    width: 60%;
+    z-index: 5;
+  }
+  .nav-wrapper ul.open li:first-child {
+    border-top: 1px solid black;
+  }
+  .nav-wrapper ul.open li {
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  .nav-wrapper ul.open li a {
+    line-height: 4rem;
+  }
+
   .hero-inp {
     width: 45rem;
   }

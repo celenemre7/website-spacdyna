@@ -16,10 +16,13 @@
 
   <body>
     <script>
-      // JavaScript Kodları
-      document.querySelector(".fa-bars").addEventListener("click", function () {
-        var ul = document.querySelector("ul");
-        ul.style.display = ul.style.display === "flex" ? "none" : "flex"; // Önceki kod "none" olarak ayarlıyordu, burada "flex" olarak değiştirildi.
+      document.addEventListener("DOMContentLoaded", function () {
+        const barsIcon = document.querySelector(".fa-bars");
+        const navMenu = document.querySelector(".nav-wrapper ul");
+
+        barsIcon.addEventListener("click", function () {
+          navMenu.classList.toggle("open");
+        });
       });
     </script>
 
